@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background: purple;
+            background-blend-mode: darken;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        nav img{
+            margin-left: 40px;
+            display:inline-block;
+            height: 80px;
+            width: 125px;
+            top: 0;
+            position: sticky;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav li{
+            color: white;
+            font-size: large;
+            margin-right: 50px;
+        }
+        #li1{
+            margin-left: 20px;
+        }
+        .d1{
+            height: 500px;
+            width: 100%;
+            background-image: url("https://www.cornitos.in/wp-content/uploads/2023/08/Home-Banner-3-1.jpg");
+            background-size:1500px;
+            background-repeat: no-repeat;
+        }
+        .d2{
+            height:400px;
+            width:600px;
+            float: left;
+        }
+        div h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:blueviolet;
+        }
+        .d2 img{
+            height: 500px;
+            width: 750px;
+        }
+        .d3{
+            height: 600px;
+            width: 1500px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        #div2
+        {
+            margin-left: 30px;
+            margin-right: 20px;
+        }
+        li:hover{
+            background-color: deeppink;
+        }
+        li a{
+            color: white;
+            text-decoration: none;
+        }
+       .div1{
+        display: inline-block;
+        vertical-align: middle;
+        height:500px;
+        width:500px;
+        margin-left: 100px;
+       }
+       .t1{
+        border: none;
+        border-bottom: 2px solid black;
+        height: 40px;
+        font-size: 16pt;
+        width: 170px;
+       }
+       #txb1,#txb2{
+        margin-left: 20px;
+       }
+       #hd1{
+        font-size: 50px;
+        color:yellow;
+       }
+       .d4{
+        background-color:purple;
+       }
+       .div2{
+        display: inline-block;
+        vertical-align: middle;
+        height:500px;
+        width:500px;
+        margin-left: 100px;
+        margin-top: 80px;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <a><img src="https://mir-s3-cdn-cf.behance.net/projects/404/595602173702761.Y3JvcCwzNjc0LDI4NzQsMjYzLDI0NQ.png"></a>
+        <ul type="none">
+            <li id="li1"><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <lI><a href="ContactUs.html">Contact Us</a></lI>
+        </ul>
+    </nav>
+    <div class="d1">
+    </div><br>
+    <div class="d3">
+        <div class="d2" id="div2">
+            <h1>SNACKING SHOULD BE EVERYTHING EXCEPT BORING</h1><br><br>
+            <p><b>Whenever the urge strikes, you want a world of options, not just the typical flavours you’re used to. From timeless classics to unique new sensations, we’ve made sure that your world of snacks is as broad as you could ever want it to be. Explore the wild side of snacking with Cornitos!</b></p><br><br>
+    
+               <p><b>Dont worry if your wild side has a healthy bent too. Gluten free, made with natural ingredients, and cholesterol free, Cornitos wants you to go wild but responsibly.</b></p>
+        </div>
+        <div class="d2">
+            <img src="https://www.cornitos.in/wp-content/uploads/2023/07/snack-copy.webp"> 
+        </div>
+    </div>
+    <div class="d4">
+        <div class="div1">
+            <br><br>
+            <form>
+                <h1 id="hd1">GET IN TOUCH</h1><br><br>
+                <input type="text" class="t1" placeholder="Name">
+                <input type="text" class="t1" id="txb1" placeholder="Email"><br><br>
+                <input type="text" class="t1" placeholder="Interested in">
+                <input type="text" class="t1" id="txb2" placeholder="Phone Number"><br><br>
+                <button id="b1" style="height: 40px; width: 120px; background-color: yellow; color:purple"><b>SUBMIT</b></button>
+            </form>
+        </div>
+        <div class="div2">
+            <h1 id="hd2" style="color:yellow; font-size: 50px;">Follow us on:</h1><br><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1024px-Facebook_logo_36x36.svg.png"
+            height="50px" width="50px">
+            <img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1710028800&semt=ais"
+            height="50px" width="50px" style="margin-left: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+            height="50px" width="70px" style="margin-left: 20px;">
+        </div>
+    </div>
+</body>
+</html>

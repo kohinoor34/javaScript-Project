@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background: purple;
+            background-blend-mode: darken;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        nav img{
+            margin-left: 40px;
+            display:inline-block;
+            height: 70px;
+            width: 110px;
+            top: 0;
+            position: sticky;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav li{
+            color: white;
+            font-size: large;
+            margin-right: 50px;
+        }
+        #li1{
+            margin-left: 20px;
+        }
+        .d1{
+            height: 400px;
+            width: 100%;
+            background-image: url("https://www.inspiredtaste.net/wp-content/uploads/2021/04/Homemade-Tortilla-Chips-9-1200-1200x800.jpg");
+            background-size:1500px;
+            background-repeat: no-repeat;
+        }
+        .d2{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            max-width: 300px;
+            height: 380px;
+            margin: auto;
+            text-align: center;
+            font-family: Arial;
+            float: left;
+        }
+        div h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:black;
+        }
+        .d2 img{
+            height: 150px;
+            width: 150px;
+        }
+        .d3{
+            height: 600px;
+            width: 1500px;
+            margin-left: 30px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        li:hover{
+            background-color: deeppink;
+        }
+        li a{
+            color: white;
+            text-decoration: none;
+        }
+        .d4{
+        background-color:purple;
+       }
+       .div2{
+        display: inline-block;
+        vertical-align: middle;
+        height:500px;
+        width:500px;
+        margin-left: 100px;
+        margin-top: 80px;
+       }
+       .div1{
+        display: inline-block;
+        vertical-align: middle;
+        height:500px;
+        width:500px;
+        margin-left: 100px;
+       }
+       .t1{
+        border: none;
+        border-bottom: 2px solid black;
+        height: 40px;
+        font-size: 16pt;
+        width: 170px;
+       }
+       #txb1,#txb2{
+        margin-left: 20px;
+       }
+       .p1{
+        color: grey;
+        font-size: 22px;
+       }
+       #hd3{
+        color:orangered;
+       }
+       .d5{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            width: 520px;
+            height: 500px;
+            margin-left:330px;
+            font-family: Arial;
+            float: left;
+        }
+        .div5{
+        display: inline-block;
+        vertical-align: middle;
+        height:500px;
+        width:500px;
+        margin-left: 100px;
+        margin-top: 80px;
+       }
+       .btn2:hover{
+        opacity: 0.7;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Homepage.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/595602173702761.Y3JvcCwzNjc0LDI4NzQsMjYzLDI0NQ.png"></a>
+        <ul type="none">
+            <li id="li1"><a href="AboutUs.html">About Us</a></li>
+            <li><a>Products</a></li>
+            <lI><a href="ContactUs.html">Contact Us</a></lI>
+        </ul>
+    </nav>
+    <div class="d1">
+    </div><br><br>
+    <h1 style="color:orangered; text-align: center; font-size: 50px;"><b>OUR PRODUCTS</b></h1><br>
+    <div class="d3">
+        <br><br>
+        <div class="d2" id="div2" style="margin-left: 90px;">
+          <img src="https://m.media-amazon.com/images/I/71a8UPR1G2L.jpg">
+          <h1 id="hd3">CRUSTIES</h1><br>
+          <p class="p1">Rs 80</p><br>
+          <p>Our new baked potato crusties with peri peri flavour</p> <br> 
+          <label>Count:</label>
+          <input type="number" id="t1"><br><br>
+          <button class="btn2" id="b1" onclick="crusties()" style="border: none;
+          outline: none;
+          padding: 12px;
+          color: white;
+          background-color: orangered;
+          text-align: center;
+          width:100%;
+          font-size: 18px;">Add to Cart</button>
+        </div>
+        <div class="d2" style="margin-left: 50px;">
+            <img src="https://www.cornitos.in/wp-content/uploads/2023/06/Cornitos-Nachos-Cheese.png">
+            <h1 id="hd3">NACHO CRISPS</h1><br>
+            <p class="p1">Rs 100</p><br>
+            <p>Our signature baked nacho crisps with cheese and herbs flavour</p> <br> 
+            <label>Count:</label>
+            <input type="number" id="t2"><br><br>
+            <button class="btn2" id="b2" onclick="nachorisps()" style="border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: orangered;
+            text-align: center;
+            width:100%;
+            font-size: 18px;">Add to Cart</button> 
+        </div>
+        <div class="d2" style="margin-left: 50px; height:380px;">
+            <img src="https://www.cornitos.in/wp-content/uploads/2023/06/Taco.png">
+            <h1 id="hd3">TACO SHELLS</h1><br>
+            <p class="p1">Rs 110</p><br>
+            <p>Our new baked and crispy DIY taco shells for creating your own tacos</p> <br> 
+            <label>Count:</label>
+            <input type="number" id="t3"><br><br>
+            <button class="btn2" id="b3" onclick="tacoshells()" style="border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: orangered;
+            text-align: center;
+            width:100%;
+            font-size: 18px;">Add to Cart</button> 
+        </div>
+    </div>
+    <div class="d3">
+        <div class="d2" id="div2" style="margin-left: 90px;">
+          <img src="https://www.cornitos.in/wp-content/uploads/2023/06/Cornitos-Cheese-Dip.png">
+          <h1 id="hd3">CHEESY DIP</h1><br>
+          <p class="p1">Rs 50</p><br>
+          <p>Our signature cheesy dip with a hint of jalapeno</p> <br> 
+          <label>Count:</label>
+          <input type="number" id="t4"><br><br>
+          <button class="btn2" id="b4" onclick="cheesydip()" style="border: none;
+          outline: none;
+          padding: 12px;
+          color: white;
+          background-color: orangered;
+          text-align: center;
+          width:100%;
+          font-size: 18px;">Add to Cart</button>
+        </div>
+        <div class="d2" style="margin-left: 50px;">
+            <img src="https://www.cornitos.in/wp-content/uploads/2023/06/Sliced-Jalapeno-2.png">
+            <h1 id="hd3">JALAPENO PEPPERS</h1><br>
+            <p class="p1">Rs 100</p><br>
+            <p>Our sliced jalapeno peppers can be added to dishes for an exciting taste</p> <br> 
+            <label>Count:</label>
+            <input type="number" id="t5"><br><br>
+            <button class="btn2" id="b5" onclick="jalapeno()" style="border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: orangered;
+            text-align: center;
+            width:100%;
+            font-size: 18px;">Add to Cart</button> 
+        </div>
+        <div class="d2" style="margin-left: 50px; height:380px;">
+            <img src="https://www.cornitos.in/wp-content/uploads/2023/12/Pistachios-Front.jpg">
+            <h1 id="hd3">PISTACHIOS</h1><br>
+            <p class="p1">Rs 104</p><br>
+            <p>Our perfectly roasted pistachios with natural flavours and crunch</p> <br> 
+            <label>Count:</label>
+            <input type="number" id="t6"><br><br>
+            <button class="btn2" id="b6" onclick="pista()" style="border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: orangered;
+            text-align: center;
+            width:100%;
+            font-size: 18px;">Add to Cart</button> 
+        </div>
+    </div>
+
+    <div class="d3">
+        <div class="d5" id="div5">
+            <br>
+            <h1 style="text-align: center; color:blueviolet">YOUR CART</h1><br>
+        </div>
+    </div>
+    <button class="btn2" id="b6" onclick="calculateBill()" style="border: none;
+    outline: none;
+            padding: 12px;
+            color: white;
+            background-color: blueviolet;
+            text-align: center;
+            width:200px;
+            height:60px;
+            margin-left: 522px;
+            margin-top:0px;
+            font-size: 18px;">Calculate Total Bill</button>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="d4">
+        <div class="div1">
+            <br><br>
+            <form>
+                <h1 id="hd1" style="color:yellow; font-size:50px">GET IN TOUCH</h1><br><br>
+                <input type="text" class="t1" placeholder="Name">
+                <input type="text" class="t1" id="txb1" placeholder="Email"><br><br>
+                <input type="text" class="t1" placeholder="Interested in">
+                <input type="text" class="t1" id="txb2" placeholder="Phone Number"><br><br>
+                <button id="b1" style="height: 40px; width: 120px; background-color: yellow; color:purple"><b>SUBMIT</b></button>
+            </form>
+        </div>
+        <div class="div2">
+            <h1 id="hd2" style="color:yellow; font-size: 50px;">Follow us on:</h1><br><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1024px-Facebook_logo_36x36.svg.png"
+            height="50px" width="50px">
+            <img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?size=338&ext=jpg&ga=GA1.1.1395880969.1710028800&semt=ais"
+            height="50px" width="50px" style="margin-left: 20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+            height="50px" width="70px" style="margin-left: 20px;">
+        </div>
+    </div>
+    <script>
+        var priceCrusties=0; 
+        var priceNacho=0; 
+        var priceTaco=0; 
+        var pricecheesy=0; 
+        var pricejalapeno=0;
+        var pricepista=0;
+        function crusties()
+        {
+            let count = parseInt(document.getElementById("t1").value);
+            if(count>0)
+            {
+                let d5 = document.getElementById("div5");
+                priceCrusties=count*80;
+                d5.innerHTML+="<br><br>" + "<h2 style='font-size: 20px; font-weight: bold; text-align: center;'>" +"Crusties" + "&nbsp" + "x" + "&nbsp" + count + ":" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ "Rs" + "&nbsp" + priceCrusties + "</h2>";
+            }
+        }
+        function nachorisps()
+        {
+            let count = parseInt(document.getElementById("t2").value);
+            if(count>0)
+            {
+                let d5 = document.getElementById("div5");
+                pricenacho=count*100;
+                d5.innerHTML+= "<br><br>" + "<h2 style='font-size: 20px; font-weight: bold; text-align: center;'>" +"Nacho Crisps" + "&nbsp" + "x" + "&nbsp" + count + ":" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ "Rs" + "&nbsp" + pricenacho + "</h2>";
+            }
+        }
+        function tacoshells()
+        {
+            let count = parseInt(document.getElementById("t3").value);
+            if(count>0)
+            {
+                let d5 = document.getElementById("div5");
+                pricetaco=count*110;
+                d5.innerHTML+= "<br><br>" + "<h2 style='font-size: 20px; font-weight: bold; text-align: center;'>" +"Taco Shells" + "&nbsp" + "x" + "&nbsp" + count + ":" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ "Rs" + "&nbsp" + pricetaco + "</h2>";
+            }
+        }
+        function cheesydip()
+        {
+            let count = parseInt(document.getElementById("t4").value);
+            if(count>0)
+            {
+                let d5 = document.getElementById("div5");
+                pricecheesy=count*50;
+                d5.innerHTML+= "<br><br>" + "<h2 style='font-size: 20px; font-weight: bold; text-align: center;'>" +"Cheesy Dip" + "&nbsp" + "x" + "&nbsp" + count + ":" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ "Rs" + "&nbsp" + pricecheesy + "</h2>"; 
+            }
+        }
+        function jalapeno()
+        {
+            let count = parseInt(document.getElementById("t5").value);
+            if(count>0)
+            {
+                let d5 = document.getElementById("div5");
+                pricejalapeno=count*100;
+                d5.innerHTML+= "<br><br>" + "<h2 style='font-size: 20px; font-weight: bold; text-align: center;'>" +"Jalapeno Peppers" + "&nbsp" + "x" + "&nbsp" + count + ":" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ "Rs" + "&nbsp" + pricejalapeno + "</h2>";
+            }
+        }
+        function pista()
+        {
+            let count = parseInt(document.getElementById("t6").value);
+            if(count>0)
+            {
+                let d5 = document.getElementById("div5");
+                pricepista=count*104;
+                d5.innerHTML+= "<br><br>" + "<h2 style='font-size: 20px; font-weight: bold; text-align: center;'>" +"Pistachios" + "&nbsp" + "x" + "&nbsp" + count + ":" + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+ "Rs" + "&nbsp" + pricepista + "</h2>";
+            }
+        }
+        function calculateBill()
+        {
+           let totalprice= priceCrusties + priceNacho + priceTaco + pricecheesy + pricejalapeno + pricepista;
+           let d5 = document.getElementById("div5");
+           d5.innerHTML+="<br><br>" + "<h2 style='font-size: 26px; font-weight: bold; text-align: center; color:blueviolet;'>" + "TOTAL BILL AMOUNT:" + "&nbsp &nbsp" + "Rs" + "&nbsp" + totalprice + "</h2>";
+        }
+    </script>
+</body>
+</html>

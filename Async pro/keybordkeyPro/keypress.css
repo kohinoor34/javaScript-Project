@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+  
+}
+
+html body{
+  color: white;
+  background: black;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#insert{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+tr{
+  background: red;
+}
+.color:hover{
+  background: #ecdede;
+}
+tr td{
+  text-align: center;
+}
+
+

@@ -1,0 +1,13 @@
+body{
+  
+  text-align: center;
+  flex-wrap:wrap;
+
+}
+
+#first{
+  background-image: url(./stadium.jpeg);
+}
+
+
+

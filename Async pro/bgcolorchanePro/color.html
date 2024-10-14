@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>click button and see magic</h1>
+    <button id="startb">start</button>
+    <button id="stopb">stop</button>
+
+    <script>
+      function generateColor() {
+        let hex = "0123456789ABCDEF";
+        let color = "#";
+        for (let i =0; i < 6; i++) {
+          color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color
+      }
+
+
+      let interval
+      let startChangingColor = function(){
+      if(!interval){
+           interval = setInterval(runColor,1000);
+      }
+        function runColor(){
+        document.body.style.backgroundColor = generateColor()
+      }
+    }
+
+    let stopChangingColor = function(){
+      clearInterval(interval);
+      interval = null;
+    }
+      
+   
+      document.getElementById('startb').addEventListener('click',startChangingColor);
+      document.getElementById('stopb').addEventListener('click',stopChangingColor);
+   
+    </script>
+  </body>
+</html>
